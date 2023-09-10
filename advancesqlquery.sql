@@ -118,4 +118,13 @@ SELECT * FROM courses WHERE description LIKE 'a%r';
 SELECT * FROM courses WHERE published_date IS NULL;
 
 
+---indexing
+EXPLAIN ANALYSE SELECT empid FROM employe;
+---indexing
+EXPLAIN ANALYSE SELECT empid FROM employe WHERE empid=10;
+
+CREATE INDEX name_index on employe(full_name);
+EXPLAIN ANALYSE SELECT empid ,full_name from employe WHERE full_name='parvez9' ;
+
+
 

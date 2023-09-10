@@ -33,9 +33,19 @@ INSERT INTO users1 VALUES (1,'abcdef','abc22fegmail.com');
 
 INSERT INTO users1 VALUES (2,'abcdefg','abc22feggmail.com');
 
-INSERT INTO users1 (users_name,email)
+INSERT INTO users1 (demo)
 VALUES
-('salman','play@gmail.com'),('balman','balman@gmail.com')
+('check');
+INSERT INTO users1 (demo)
+VALUES
+('check1');
+INSERT INTO users1 (demo)
+VALUES
+('check2');
+INSERT INTO users1 (demo)
+VALUES
+('check3')
+
 
 TRUNCATE TABLE users1;
 --## ALTER TABLE
@@ -75,7 +85,7 @@ insert into users1 VALUES (5,'salman5','salman5@gmail.com')
 
 
 ALTER TABLE users1
-DROP COLUMN age;
+DROP COLUMN demo;
 
 SELECT * FROM users1;
 
